@@ -164,7 +164,7 @@ nav a:hover {
 	margin-top: -7px;
 	background: url(../img/work_bg.png) repeat;
 	width: 100%;
-	height: 760px;
+
 	position: relative;
 	z-index: 400;
 }
@@ -202,19 +202,19 @@ span.ss_text {
 }
 
 .screenshot1 {
-	background: url(../img/screenshot1.png) no-repeat;
+	background: url(../images/tt.png) no-repeat;
 	width: 280px;
 	height: 180px;
 }
 
 .screenshot2 {
-	background: url(../img/screenshot2.png) no-repeat;
+	background: url(../images/lm.png) no-repeat;
 	width: 280px;
 	height: 180px;
 }
 
 .screenshot3 {
-	background: url(../img/screenshot3.png) no-repeat;
+	background: url(../images/hf.png) no-repeat;
 	width: 280px;
 	height: 180px;
 }
