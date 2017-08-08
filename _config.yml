@@ -29,7 +29,7 @@ nav:
     href:           "about"
   - name:           "Download"
     href:           "releases"
-  - name:           "Blog"  
+  - name:           "CV"  
     href:           "CV"
 sass:
   style:            :compressed

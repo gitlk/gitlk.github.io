@@ -2,7 +2,7 @@
 <html lang="">
 <head>
   <meta charset="utf-8">
-	<title>听楼一夜雨个人博客</title>
+	<title>听楼一夜雨个人简历</title>
 	<meta name="description" content="" />
   	<meta name="keywords" content="" />
 	<meta name="robots" content="" />
@@ -22,37 +22,7 @@
 	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="cform.js"></script>
 	
-<script type="text/javascript"> // sticky nav bar 
-  $(document).ready(function(){
-    $("nav").sticky({topSpacing:0});
-  });
-</script>
 
-<script type="text/javascript"> // fancybox
-$(document).ready(function() {
-
-	/* This is basic - uses default settings */
-	
-	$("a.single_image").fancybox();
-	
-	/* Using custom settings */
-	
-	$("a#inline").fancybox({
-		'hideOnContentClick': true
-	});
-
-	/* Apply fancybox to multiple items */
-	
-	$("a.group").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600, 
-		'speedOut'		:	200, 
-		'overlayShow'	:	false
-	});
-	
-});
-</script>
 	
 </head>
 
@@ -81,7 +51,7 @@ $(document).ready(function() {
 		<li><a href="#services">工作内容</a></li>
 		<li><a href="#work">工作项目</a></li>
 		<li><a href="#contact">联系我吧</a></li>
-		<li><a href="/blog">我的博客</a></li>
+		<li><a href="/">我的博客</a></li>
 	</ul>
 </nav> <!-- end nav -->
 
@@ -223,21 +193,6 @@ $(document).ready(function() {
 			<div class="subheader_line"></div><h2>联系我吧</h2><div class="subheader_line"></div>
 		</div>
 		
-		<!-- <div class="grid_7">
-			<div class="contact_form">
-				<h4>发送邮件</h4>
-				<form method="post">
-					<input type="text" name="Name" id="name" value="Name" onFocus="this.value = this.value=='Name'?'':this.value;" onBlur="this.value = this.value==''?'Name':this.value;" />
-					<input type="text" name="Email" id="email" value="Email" onFocus="this.value = this.value=='Email'?'':this.value;" onBlur="this.value = this.value==''?'Email':this.value;" />
-					<input type="text" value="Subject" id="subject" onFocus="this.value = this.value=='Subject'?'':this.value;" onBlur="this.value = this.value==''?'Subject':this.value;" />
-					<textarea name="Message" id="body" onFocus="this.value = this.value=='Message'?'':this.value;" onBlur="this.value = this.value==''?'Message':this.value;">Message</textarea>
-					<input type="submit" name="submit" id="submit" value="send" class="submit-button" onClick="return check_values();" />
-				</form>
-				<div id="confirmation" style="display:none; position: relative; z-index: 600; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; color: #4e4e4e;"></div>
-			</div> <!-- end .contact_form
-				
-		</div> --> 
-		 <!-- end .grid_7 -->
 				
 		<div class="grid_9">
 		
@@ -268,3 +223,34 @@ $(document).ready(function() {
 <footer>
 	<p>&copy; 2016 All rights reserved</p>
 </footer>
+<script type="text/javascript"> // sticky nav bar 
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
+</script>
+
+<script type="text/javascript"> // fancybox
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a.single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
