@@ -1,18 +1,18 @@
-name:               "Ink"
-description:        "A minimalistic jekyll theme for humans"
+name:               "听楼一夜雨"
+description:        "时间顺流而下，生活逆舟前行。"
 
-url:                ""
-author:             "thinker3197"
-email:              "jhondoe@abc.com"
+url:                "https://gitlk.github.io"
+author:             "lk"
+email:              "913887798@qq.com"
 gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "jhondoe"
-email:              "jhondoe@abc.com"
-github:             "jhondoe"
-pinterest:          "jhondoe"
-linkedin:           "jhondoe"
-facebook:           "jhondoe"
+twitter:            "听楼一夜雨"
+email:              "913887798@qq.com"
+github:             "gitlk"
+pinterest:          "听楼一夜雨"
+linkedin:           "听楼一夜雨"
+facebook:           "听楼一夜雨"
 
-disqus_shortname:   "thinker3197"
+disqus_shortname:   "听楼一夜雨"
 
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
@@ -26,9 +26,9 @@ markdown:           kramdown
 
 nav:
   - name:           "About"
-    href:           "/about"
+    href:           "/blog/about"
   - name:           "Download"
-    href:           "/releases"
+    href:           "/blog/releases"
 
 sass:
   style:            :compressed
