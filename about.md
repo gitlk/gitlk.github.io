@@ -3,6 +3,7 @@ title: About
 permalink: /about/
 ---
 
-<p class="heavy-title"><a href="http://github.com/thinker3197/Ink">Ink</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
+<p class="heavy-title">
+	个人博客，用于管理个人学习心得及笔记，简历等使用。如有疑问请联系邮箱：913887798@qq.com
+</p>
 
->Designed and developed by [@thinker3197](https://github.com/thinker3197).
