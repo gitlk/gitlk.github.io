@@ -1,270 +1,38 @@
-<!DOCTYPE html>
-<html lang="">
-<head>
-  <meta charset="utf-8">
-	<title>听楼一夜雨个人博客</title>
-	<meta name="description" content="" />
-  	<meta name="keywords" content="" />
-	<meta name="robots" content="" />
-	
-	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700,900|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
-	
-	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="css/960.css" rel="stylesheet" type="text/css" />
-	<link href="css/styles.css" rel="stylesheet" type="text/css" />
-	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
-	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/smooth-scroll.js"></script>
-	<script type="text/javascript" src="js/jquery.sticky.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="cform.js"></script>
-	
-<script type="text/javascript"> // sticky nav bar 
-  $(document).ready(function(){
-    $("nav").sticky({topSpacing:0});
-  });
-</script>
+---
+layout: default 
+---
+<header class="bloghead">
+    <h1 class="bloghead-title">
+    <a href="{{ site.url }}/">{{ site.name }}<span>&#39;s blog</span></a>
+  </h1>
+    <nav class="bloghead-nav">
+        {% for nav in site.nav %}
+        <a href="{{ nav.href }}">{{ nav.name }}<span> &nbsp;/&nbsp; </span></a> {% endfor %}
+    </nav>
+</header>
+<div class="content">
+    {% if site.posts.size == 0 %}
+    <h2>No post found</h2> {% else %} {% for post in paginator.posts %}
+    <div class="post-list">
+        <h2 class="post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2> {% if post.description %}
+        <p>{{ post.description }}</p>
+        {% endif %}
+        <div class="post-date">
+            <time>{{ post.date | date_to_string }}</time>
+        </div>
+    </div>
+    {% endfor %} {% if paginator.total_pages > 1 %}
+    <div class="pages">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><</a>
+      {% endif %}
 
-<script type="text/javascript"> // fancybox
-$(document).ready(function() {
-
-	/* This is basic - uses default settings */
-	
-	$("a.single_image").fancybox();
-	
-	/* Using custom settings */
-	
-	$("a#inline").fancybox({
-		'hideOnContentClick': true
-	});
-
-	/* Apply fancybox to multiple items */
-	
-	$("a.group").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600, 
-		'speedOut'		:	200, 
-		'overlayShow'	:	false
-	});
-	
-});
-</script>
-	
-</head>
-
-<div class="topbar"></div> <!-- top bar -->
-
-<div id="intro">
-	<div class="title">
-		<h1>HELLO<br />
-		<span class="small">Welcome to check out my blog</span>
-		<br />
-		<span class="name">My name is like </span>--<i>(李柯)</i>
-		<br />
-		<span class="intro_line"></span>
-		<span class="amp">&</span>
-		<span class="intro_line"></span>
-		<br />
-		<span class="small">时间顺流而下，生活逆水行舟。</span></h1>
-	</div> <!-- end .title -->
-</div> <!-- end #intro -->
-
-
-<nav>
-	<ul>
-		<li><a href="#intro">首页</a></li>
-		<li><a href="#about">个人简介</a></li>
-		<li><a href="#services">工作内容</a></li>
-		<li><a href="#work">工作项目</a></li>
-		<li><a href="#contact">联系我吧</a></li>
-		<li><a href="/blog">我的博客</a></li>
-	</ul>
-</nav> <!-- end nav -->
-
-<div id="about">
-	<div class="container_16">
-	
-		<div class="subheader">
-			<div class="subheader_line"></div><h2>个人简介</h2><div class="subheader_line"></div>
-		</div>
-	
-	<div class="grid_5">
-		<div class="about_pic"></div>
-		<div class="social">
-			<ul>
-				<p>  &nbsp; &nbsp;本人踏实认真，勤奋上进,具备良好的学习,沟通和团队协作能力，能承受较大工作压力，对工作富有激情，喜欢独立思考，有良好的逻辑思维能力，能独立完成任务。性格开朗，待人友好，为人诚实谦虚</p>
-			</ul>
-		</div> <!-- end .social -->
-	</div> <!-- end .grid_5 -->
-	
-	<div class="grid_6">
-			<div class="about_copy">
-			<h4>简介</h4>
-			<p>1、熟悉mysql数据库,了解数据库效率优化的基本方法</p>
-			<p>2、熟练掌握Html、Css、Js、Jquery，ajax等前端技术，能基本保证页面交互的体验度。</p>
-			<p>3、理解面向对象开发，对继承有清晰概念 理解MVC框架思想。</p>
-			<p>4、熟悉thinkphp框架，smarty模板及其他部分框架，了解linux基本命令，常用cms二次开发框架。</p>
-			<p>5、熟悉Mysql等主流数据库；</p>
-			<p>6、书写代码整齐规范；</p>
-			<p>7、熟悉Apache,Mysql,Php等软件的安装配置；</p>
-			<p>8、熟练使用SVN/FTP/Git等版本控制。</p>
-			<p>9、熟悉各种企业站定制开发，独立开发过几十个企业站，能根据需求完成基本数据库设计及网站开发。</p>
-		</div> <!-- end .about_copy -->
-	</div> <!-- end .grid_6 -->
-	
-	<div class="grid_5">
-		<div class="skills">
-			<h4>Skills</h4>
-			<ul>
-				<li><div class="skill1"><p>PHP/MySQL</p></div></li>
-				<li><div class="skill2"><p>Javascript</p></div></li>
-				<li><div class="skill3"><p>HTML/CSS</p></div></li>
-				<li><div class="skill4"><p>Git/Svn/Ftp</p></div></li>
-				<li><div class="skill5"><p>TP、phpcms等</p></div></li>
-				<li><div class="skill6"><p>Photoshop</p></div></li>
-			</ul>
-		</div> <!-- end .skills -->
-	</div> <!-- end .grid_5 -->
-	
-	</div> <!-- end .container_16 -->
-</div> <!-- end #about -->
-<div class="about_bg_bottom"></div>
-
-<div id="services">
-	<div class="container_16">
-	
-		<div class="subheader">
-			<div class="subheader_line"></div><h2>工作内容</h2><div class="subheader_line"></div>
-		</div>
-		
-		<div class="clear"></div>
-		
-		<div class="serv_icons">
-			<div class="grid_4">
-				<div class="serv_icon1"></div>
-				<h3>设计</h3>
-				<p>根据需求文档及设计页面，结合项目经验，和客户沟通项目功能及具体细节，设计栏目架构及数据库，理清开发流程。</p>
-			</div>
-		
-			<div class="grid_4">
-				<div class="serv_icon2"></div>
-				<h3>开发</h3>
-				<p>根据需求开发项目，编写文档，实现网站功能及效果。</p>
-			</div>
-		
-			<div class="grid_4">
-				<div class="serv_icon3"></div>
-				<h3>测试</h3>
-				<p>项目功能测试，优化，和客户协调沟通项目中存在的问题，完善项目功能，bug修改。</p>
-			</div>
-			
-			<div class="grid_4">
-				<div class="serv_icon4"></div>
-				<h3>维护</h3>
-				<p>网站后期，修改bug，完善用户体验，保证网站正常运行。</p>
-			</div>
-		</div> <!-- end .serv_icons -->
-		
-	</div> <!-- end .container_16 -->
-</div> <!-- end #services -->
-
-<div class="services_bg_bottom"></div>
-
-<div id="work">
-	<div class="container_16">
-		
-		<div class="subheader">
-			<div class="subheader_line"></div><h2>最近工作</h2><div class="subheader_line"></div>
-		</div>
-		
-		<div class="gallery">
-			<div class="grid_5">
-				<a href="http://www.cdttjt.com/" target="_blank" class="single_image">
-				<div class="screenshot1 ss"></div></a>
-				<p>成都天投集团<br />
-				<span class="ss_text">网站开发/pc站/党校团校</span>
-				</p>
-			</div>
-			<div class="grid_6">
-				<a href="http://lmoffer.com/" class="single_image"><div class="screenshot2 ss center"></div></a>
-				<p>懒马教育网<br />
-				<span class="ss_text">网站开发/PC+WAP</span>
-				</p>
-			</div>
-			<div class="grid_5">
-				<a href="img/example_img.png" class="single_image"><div class="screenshot3 ss"></div></a>
-				<p>华丰集团<br />
-				<span class="ss_text">网站开发</span>
-				</p>
-			</div>
-		
-			<div class="spacer">&nbsp;</div>
-		
-		</div><!-- end .gallery -->
-		
-	</div> <!-- end .container_16 -->
-</div> <!-- end #work -->
-
-<div class="work_bg_bottom"></div>
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-
-
-
-
-
-<div id="contact">
-	<div class="container_16">
-	
-		<div class="subheader">
-			<div class="subheader_line"></div><h2>联系我吧</h2><div class="subheader_line"></div>
-		</div>
-		
-		<!-- <div class="grid_7">
-			<div class="contact_form">
-				<h4>发送邮件</h4>
-				<form method="post">
-					<input type="text" name="Name" id="name" value="Name" onFocus="this.value = this.value=='Name'?'':this.value;" onBlur="this.value = this.value==''?'Name':this.value;" />
-					<input type="text" name="Email" id="email" value="Email" onFocus="this.value = this.value=='Email'?'':this.value;" onBlur="this.value = this.value==''?'Email':this.value;" />
-					<input type="text" value="Subject" id="subject" onFocus="this.value = this.value=='Subject'?'':this.value;" onBlur="this.value = this.value==''?'Subject':this.value;" />
-					<textarea name="Message" id="body" onFocus="this.value = this.value=='Message'?'':this.value;" onBlur="this.value = this.value==''?'Message':this.value;">Message</textarea>
-					<input type="submit" name="submit" id="submit" value="send" class="submit-button" onClick="return check_values();" />
-				</form>
-				<div id="confirmation" style="display:none; position: relative; z-index: 600; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; color: #4e4e4e;"></div>
-			</div> <!-- end .contact_form
-				
-		</div> --> 
-		 <!-- end .grid_7 -->
-				
-		<div class="grid_9">
-		
-			<div class="contact_info">
-				<h4>联系信息</h4>
-				<div class="grid_4 alpha">
-					<p><img src="img/icn_phone.png" alt="" /> 187 8295 9065</p>
-					<p><img src="img/icn_mail.png" alt="" /> 913887798@qq.com</p>
-				</div>
-				<div class="grid_4 omega">
-					<p><img src="img/icn_address.png" alt="" /> 四川省成都市<br />
-					
-					<span class="address">华阳古城小区东苑</span></p>
-				</div>
-			</div> <!-- end .contact_info -->
-		
-			<div class="map">
-				
-			</div> <!-- end .map -->
-			
-		</div> <!-- end .grid_9 -->
-		
-	</div> <!-- end .container_16 -->
-</div> <!-- end #contact -->
-
-<div class="contact_bg_bottom"></div>
-
-<footer>
-	<p>&copy; 2016 All rights reserved</p>
-</footer>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">></a>
+      {% endif %}
+    </div>
+    {% endif %}
+  {% endif %}
+</div>
