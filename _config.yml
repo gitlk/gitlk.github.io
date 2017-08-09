@@ -1,13 +1,13 @@
 # Site settings
-name: 个人博客
+name: LK的博客
 email: 913887798@qq.com
-author: 李柯
+author: lk
 url: https://gitlk.github.io/
 resume_site: https://gitlk.github.io/CV/
 github: https://github.com/gitlk/
 baseurl: "/"
 description: 如有问题请用邮件联系我：913887798@qq.com
-meta_description: 李柯;个人博客;时间顺流而下;生活逆舟而行;生命不止;折腾不休
+meta_description: lk;个人博客;时间顺流而下;生活逆舟而行;生命不止;折腾不休
 motto: It's our wits that make us men.
 banner: 时间顺流而下;生活逆舟而行。
 
