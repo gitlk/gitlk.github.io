@@ -1,15 +1,15 @@
 # Site settings
-name: Less Or More
-email: luoyan35714@126.com
-author: Freud Kang
-url: http://www.hifreud.com
-resume_site: http://www.hifreud.com/Resume.io/
-github: https://github.com/luoyan35714/
-baseurl: "/LessOrMore"
-description: Actually, less is more!
-meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+name: 个人博客
+email: 913887798@qq.com
+author: 李柯
+url: https://gitlk.github.io/
+resume_site: https://gitlk.github.io/Resume.io/
+github: https://github.com/gitlk/
+baseurl: "/"
+description: 如有问题请用邮件联系我：913887798@qq.com
+meta_description: 李柯;个人博客;时间顺流而下;生活逆舟而行;生命不止;折腾不休
 motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+banner: 时间顺流而下;生活逆舟而行。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
@@ -17,7 +17,7 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-github_username: luoyan35714
+github_username: gitlk
 highlighter: Pygments
 
 # Build settings
