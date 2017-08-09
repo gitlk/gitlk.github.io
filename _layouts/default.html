@@ -8,6 +8,13 @@
         <img src="http://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s=140" class="img-circle" />
         <h3>{{ site.name }}</h3>
         <p>{{ site.description }}</p>
+
+
+        <ul>
+            <li>{{ post.categories }}</li>
+        </ul>
+{{ post.tags }}
+
         <ul class="social">
             {% if site.github %}
             <a type="button" href="http://github.com/{{ site.github }}">
