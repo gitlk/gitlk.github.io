@@ -11,8 +11,8 @@ motto: "It's our wits that make us men."
 banner: "时间顺流而下;生活逆舟而行。"
 
 
-permalink: "/:year/:month/:day/:title/
-paginate: "10
+permalink: "/:year/:month/:day/:title/"
+paginate: "10"
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
