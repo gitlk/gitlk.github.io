@@ -29,5 +29,6 @@ FB:
   comments :
     provider : disqus
     disqus :
-        short_name : gitlk
+        short_name : lkgit
+
 
