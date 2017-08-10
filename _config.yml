@@ -1,4 +1,3 @@
-# Site settings
 name: LK的博客
 email: 913887798@qq.com
 author: lk
@@ -11,7 +10,7 @@ meta_description: lk;个人博客;时间顺流而下;生活逆舟而行;生命�
 motto: It's our wits that make us men.
 banner: 时间顺流而下;生活逆舟而行。
 
-#permalink: /:categories/:year/:month/:day/:title/
+
 permalink: /:year/:month/:day/:title/
 paginate: 10
 
@@ -20,7 +19,7 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: gitlk
 highlighter: Pygments
 
-# Build settings
+
 markdown: kramdown
 
 baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
