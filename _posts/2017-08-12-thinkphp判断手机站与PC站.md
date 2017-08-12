@@ -37,4 +37,4 @@ tp判断手机站与PC站
     define('APP_DEBUG', false);
     require THINK_PATH.'core.php';
 	
-	~~~~~~~~~
+~~~~~~~~~~~
