@@ -13,6 +13,7 @@ tp判断手机站与PC站
 -----
 
 ~~~~~~~~~php
+
   //判断是否属手机
     function is_mobile(){
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
