@@ -3986,6 +3986,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
+  overflow: hidden;
 }
 .breadcrumb > li {
   display: inline-block;
