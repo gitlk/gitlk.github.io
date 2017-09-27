@@ -68,11 +68,11 @@ lk server
 
 当然你也可以为了我的工作打赏！以激励我做出更好的东西。
 
-支付宝
+支付宝打赏
 ----------------
 
 <img src="/styles/images/zhifubao.PNG" alt="支付宝二维码付款给lk" width="310" />
 
-微信
+微信打赏
 ----------------
 ![微信二维码付款给lk](/styles/images/weixin.png)
