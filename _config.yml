@@ -1,50 +1,32 @@
-name:               "听楼一夜雨"
-description:        "时间顺流而下，生活逆舟前行。"
+name: "慧思不染,在有识之无识.
+       智巧不用,在无限之表限."
+email: "913887798@qq.com"
+author: "lk"
+url: "https://gitlk.github.io/"
+resume_site: "https://gitlk.github.io/CV/"
+github: "https://github.com/gitlk/"
+baseurl: "/"
+description: "如有问题请用邮件联系我：913887798@qq.com"
+meta_description: "lk;个人博客;时间顺流而下;生活逆舟而行;生命不止;折腾不休"
+motto: "It's our wits that make us men."
+banner: "时间顺流而下;生活逆舟而行。"
 
-url:                "https://gitlk.github.io"
-author:             "lk"
-email:              "913887798@qq.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "听楼一夜雨"
-email:              "913887798@qq.com"
-github:             "gitlk"
-pinterest:          "听楼一夜雨"
-linkedin:           "听楼一夜雨"
-facebook:           "听楼一夜雨"
+
+permalink: "/:year/:month/:day/:title/"
+paginate: "10"
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: "gitlk"
+highlighter: "rouge"
+
+
+markdown: "kramdown"
+
+baidu_analysis: "94be4b0f9fc5d94cc0d0415ea6761ae9"
 
 disqus_shortname:   "lkgit"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+kramdown:
+  syntax_highlighter: rouge
 
-paginate:           5
-paginate_path:      "/page:num/"
-
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
-
-markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "about"
-  - name:           "CV"  
-    href:           "CV"
-sass:
-  style:            :compressed
-
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
-gems:
-  - jekyll-paginate
