@@ -47,7 +47,7 @@ sudo yum localinstall google-chrome-stable_current_x86_64.rpm
 
 
 
-完整过程代码及结果：
+#完整过程代码及结果：
 
 ~~~~~~~
 
