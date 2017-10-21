@@ -1,9 +1,10 @@
 ---
+
 layout: post
 description: 'centos最新版linux安装谷歌浏览器完整攻略，超详细'
 categories: linux
 tags: ['linux','centos','谷歌浏览器']
-date:'2017-10-21'
+
 ---
 
 
